@@ -15,9 +15,11 @@ app.set('view engine', 'hbs')
 app.use(express.static('public'))
 
 app.get('/', (req, res) => {
+    // Define layout if there is no default
     // res.render('main', {layout: 'nolayout'})
     // send data
     res.render('main', {is: true, key: 'Value', deepKey: {deepValue: 12}, iter: [{a: 10, b: 20}, {a: 30, b: 40}]})
+    // render a view
     //res.render('main')
 })
 
