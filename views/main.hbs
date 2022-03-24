@@ -1,0 +1,25 @@
+<h2>Hola</h2>
+
+<ul>
+    <li>Item</li>
+    <li>Item</li>
+</ul>
+
+{{> part}}
+
+<hr>
+
+<p>Value: {{ key }}</p>
+<p>Deep value: {{ deepKey.deepValue }}</p>
+
+<hr>
+
+<ul>
+    {{#each iter}}
+        <li>Val: {{ a }} - {{ this.b }}</li>
+    {{/each}}
+</ul>
+
+{{#if is}}
+<p>Hay</p>
+{{/if}}
